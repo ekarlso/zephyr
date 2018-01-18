@@ -1,0 +1,42 @@
+# Kconfig - LoRa radio frequency configuration options
+#
+# Copyright (c) 2018 Ding Tao
+#
+# SPDX-License-Identifuer: Apache-2.0
+#
+
+choice
+	prompt "LoRa radio frequency selection"
+	default LORA_REGION_CN470
+
+config LORA_REGION_AS923
+	bool "AS923"
+
+config LORA_REGION_AU915
+	bool "AS915"
+
+config LORA_REGION_CN470
+	bool "CN470"
+
+config LORA_REGION_CN779
+	bool "CN779"
+
+config LORA_REGION_EU433
+	bool "EU433"
+
+config LORA_REGION_EU868
+	bool "EU868"
+
+config LORA_REGION_IN865
+	bool "IN865"
+
+config LORA_REGION_KR920
+	bool "KR920"
+
+config LORA_REGION_US915
+	bool "US915"
+
+config LORA_REGION_US915_HYBRID
+	bool "US915-Hybird"
+
+endchoice

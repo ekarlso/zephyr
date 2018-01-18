@@ -1,0 +1,22 @@
+# Kconfig - LoRa configuration options
+#
+# Copyright (c) 2018 Ding Tao
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+menu "LoRa"
+
+config LORA
+	bool "Lora Radio support [Experimental]"
+	help
+	  This option enables LoRa support.
+
+if LORA
+
+source "subsys/lora/radio/Kconfig"
+source "subsys/lora/class/Kconfig"
+
+endif # LORA
+
+endmenu
