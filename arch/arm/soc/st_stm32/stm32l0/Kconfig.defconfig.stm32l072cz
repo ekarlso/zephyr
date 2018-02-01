@@ -1,0 +1,22 @@
+# Kconfig - ST Microelectronics STM32L072XB MCU
+#
+# Copyright (c) 2017 BayLibre, SAS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+if SOC_STM32L072CZ
+
+config SOC
+	string
+	default stm32l072cz
+
+config FLASH_PAGE_SIZE
+	hex
+	default 0x800
+
+config NUM_IRQS
+	int
+	default 32
+
+endif # SOC_STM32L072CZ

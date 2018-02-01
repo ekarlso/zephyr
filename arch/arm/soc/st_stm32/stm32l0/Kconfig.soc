@@ -1,0 +1,16 @@
+# Kconfig - ST Microelectronics STM32L0 MCU line
+#
+# Copyright (c) 2016 Open-RnD Sp. z o.o.
+# Copyright (c) 2016 BayLibre, SAS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+choice
+prompt "STM32L0x MCU Selection"
+depends on SOC_SERIES_STM32L0X
+
+config SOC_STM32L072CZ
+	bool "STM32L072CZ"
+
+endchoice
