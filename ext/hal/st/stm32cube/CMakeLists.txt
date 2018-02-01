@@ -68,6 +68,16 @@ if(CONFIG_SOC_SERIES_STM32F7X)
   add_subdirectory(stm32f7xx)
 endif()
 
+if(CONFIG_SOC_SERIES_STM32L0X)
+  zephyr_include_directories(
+	stm32l0xx/soc
+	stm32l0xx/drivers/include
+	stm32l0xx/drivers/include/Legacy
+	)
+
+  add_subdirectory(stm32l0xx)
+endif()
+
 if(CONFIG_SOC_SERIES_STM32L4X)
   zephyr_include_directories(
 	stm32l4xx/soc
