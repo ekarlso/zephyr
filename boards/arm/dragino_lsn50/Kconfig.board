@@ -1,0 +1,10 @@
+# Kconfig - STM32F072-EVAL board configuration
+#
+# Copyright (c) 2017 BayLibre, SAS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config BOARD_DRAGINO_LSN50
+	bool "Dragino LSN50 Sensor"
+	depends on SOC_STM32L072CZ

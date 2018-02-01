@@ -1,0 +1,20 @@
+# Kconfig - STM32F072-EVAL board configuration
+#
+# Copyright (c) 2017 BayLibre, SAS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+if BOARD_DRAGINO_LSN50
+
+config BOARD
+	default dragino_lsn50
+
+if UART_CONSOLE
+
+config UART_STM32_PORT_2
+	default y
+
+endif # UART_CONSOLE
+
+endif # BOARD_DRAGINO_LSN50
