@@ -29,10 +29,10 @@
 
 	soc {
 		adc0: adc@40007000 {
-			compatible = "st,stm32l0";
+			compatible = "st,stm32-adc";
 			reg = <0x40007000 0x1000>;
 			interrupts = <7 1>;
-			status = "ok";
+			status = "disabled";
 			label = "ADC_0";
 		};
 
